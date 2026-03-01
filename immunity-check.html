@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#070A12"/>
+  <title>Immunity Check — Caprock Technology Group</title>
+  <meta name="description" content="Quick security assessment for Panhandle businesses. Identify top risks and next best steps."/>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Caprock Technology Group home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-title">
+          <div class="name">Caprock Technology Group</div>
+          <div class="sub">Amarillo + Texas Panhandle • Security-first MSP</div>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="managed-it.html">Managed IT</a>
+<a href="surveillance.html">Surveillance</a>
+<a href="solar-sentry.html">Solar Sentry</a>
+<a href="revenue-recovery.html">Revenue Recovery</a>
+<a href="pricing.html">Pricing</a>
+        <a href="immunity-check.html">Immunity Check</a>
+        <a href="onboarding.html">Onboarding</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn ghost small" href="tel:8063165070">Call</a>
+        <a class="btn primary small" href="contact.html#book">Book a Call</a>
+        <button class="hamburger" id="openMenu" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile" id="mobileMenu" aria-hidden="true">
+    <div class="panel">
+      <div class="split">
+        <div class="brand-title">
+          <div class="name">Menu</div>
+          <div class="sub">Choose a path</div>
+        </div>
+        <button class="btn small" id="closeMenu" aria-label="Close menu">Close</button>
+      </div>
+      <div class="mt18">
+        <a href="managed-it.html">Managed IT</a>
+<a href="surveillance.html">Surveillance</a>
+<a href="solar-sentry.html">Solar Sentry</a>
+<a href="revenue-recovery.html">Revenue Recovery</a>
+<a href="pricing.html">Pricing</a>
+<hr class="sep"/>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+<a href="immunity-check.html">Immunity Check</a>
+<a href="onboarding.html">Client Onboarding</a>
+      </div>
+      <div class="mt22">
+        <a class="btn primary" style="width:100%" href="contact.html#book">Book a Call</a>
+      </div>
+      <p class="note mt16">Fast response. Straight answers. No fluff.</p>
+    </div>
+  </div>
+
+  <main>
+    
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2" style="align-items:start">
+      <div>
+        <span class="badge"><span class="dot"></span><span>Immunity Check</span></span>
+        <h1 style="margin:14px 0 12px; font-size:44px; letter-spacing:-.4px">Find the top security risks in your environment — fast.</h1>
+        <p style="color:var(--muted); line-height:1.65; margin:0">
+          The Immunity Check is a lightweight assessment designed to identify the highest-risk gaps
+          (identity, endpoints, backups, patching, and exposure) and recommend the next best move.
+        </p>
+        <div class="mt18" style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn primary" href="#form">Start the check</a>
+          <a class="btn" href="managed-it.html">Managed IT memberships</a>
+        </div>
+
+        <div class="mt26 card pad-lg">
+          <h3 class="card-title">You’ll receive</h3>
+          <ul class="ul">
+            <li><span class="check" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"/>
+  </svg>
+</span> A simple risk summary (top 3 priorities)</li>
+            <li><span class="check" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"/>
+  </svg>
+</span> Recommended membership tier</li>
+            <li><span class="check" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"/>
+  </svg>
+</span> Rollout plan and timeline</li>
+          </ul>
+          <p class="note mt12">This is not a paid penetration test. It’s a high-signal assessment designed for quick action.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card pad-lg" id="form">
+          <div class="split">
+            <div>
+              <p class="m0" style="font-weight:800">Immunity Check form</p>
+              <p class="note mt10">Answer what you know — we’ll follow up for details.</p>
+            </div>
+            <span class="pill">5 minutes</span>
+          </div>
+          <hr class="sep"/>
+          <form class="form" name="immunity-check" method="POST" data-netlify="true" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="immunity-check"/>
+            <div class="inline cols-2">
+              <div class="field"><label>Name</label><input name="name" required placeholder="Your name"/></div>
+              <div class="field"><label>Email</label><input name="email" type="email" required placeholder="name@company.com"/></div>
+            </div>
+            <div class="inline cols-2">
+              <div class="field"><label>Company</label><input name="company" required placeholder="Business name"/></div>
+              <div class="field"><label>User count</label>
+                <select name="users" required>
+                  <option value="" disabled selected>Select</option>
+                  <option>1–10</option><option>11–25</option><option>26–50</option><option>51–100</option><option>100+</option>
+                </select>
+              </div>
+            </div>
+            <div class="inline cols-2">
+              <div class="field"><label>MFA enabled?</label>
+                <select name="mfa" required><option value="" disabled selected>Select</option><option>Yes</option><option>No</option><option>Not sure</option></select>
+              </div>
+              <div class="field"><label>Backups tested recently?</label>
+                <select name="backup_tested" required><option value="" disabled selected>Select</option><option>Yes</option><option>No</option><option>Not sure</option></select>
+              </div>
+            </div>
+            <div class="field"><label>Biggest worry</label>
+              <select name="worry" required>
+                <option value="" disabled selected>Select</option>
+                <option>Ransomware / security</option>
+                <option>Downtime</option>
+                <option>Data loss</option>
+                <option>Compliance</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label>Notes</label><textarea name="notes" required placeholder="Any recent incidents, outages, or concerns?"></textarea></div>
+            <button class="btn primary" type="submit" style="width:100%">Submit Immunity Check</button>
+            <p class="note">We’ll respond with your top 3 risks and next steps.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid cols-3">
+        <div>
+          <div class="brand-title">
+            <div class="name">Caprock Technology Group</div>
+            <div class="sub">The Panhandle’s security-first IT partner.</div>
+          </div>
+          <p class="note mt12">Managed IT memberships • HaaS networking • Surveillance systems • Mobile solar surveillance trailers • Missed-call text-back revenue recovery.</p>
+          <div class="mini-links">
+            <a href="privacy.html">Privacy</a> ·
+            <a href="terms.html">Terms</a> ·
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="m0"><strong>Service area</strong></p>
+          <p class="note mt10">Amarillo + Texas Panhandle</p>
+          <p class="m0 mt16"><strong>Response promise</strong></p>
+          <p class="note mt10">If you submit a form during business hours, we aim to respond same day. After hours, first thing next business day.</p>
+        </div>
+        <div>
+          <p class="m0"><strong>Contact</strong></p>
+          <p class="note mt10">
+            <a href="tel:8063165070">806-316-5070</a><br/>
+            <a href="mailto:info@caprocktech.com">info@caprocktech.com</a><br/>
+            Amarillo, TX
+          </p>
+          <div class="mt16">
+            <a class="btn primary" href="immunity-check.html">Start Immunity Check</a>
+          </div>
+        </div>
+      </div>
+      <p class="small mt22">© 2026 Caprock Technology Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="t">Saved</div>
+    <div class="m">We’ll be in touch.</div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

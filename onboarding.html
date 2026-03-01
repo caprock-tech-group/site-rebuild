@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#070A12"/>
+  <title>Client Onboarding — Caprock Technology Group</title>
+  <meta name="description" content="Client onboarding form for Caprock Technology Group. Share your environment details for a recommended IT plan."/>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Caprock Technology Group home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-title">
+          <div class="name">Caprock Technology Group</div>
+          <div class="sub">Amarillo + Texas Panhandle • Security-first MSP</div>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="managed-it.html">Managed IT</a>
+<a href="surveillance.html">Surveillance</a>
+<a href="solar-sentry.html">Solar Sentry</a>
+<a href="revenue-recovery.html">Revenue Recovery</a>
+<a href="pricing.html">Pricing</a>
+        <a href="immunity-check.html">Immunity Check</a>
+        <a href="onboarding.html">Onboarding</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn ghost small" href="tel:8063165070">Call</a>
+        <a class="btn primary small" href="contact.html#book">Book a Call</a>
+        <button class="hamburger" id="openMenu" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile" id="mobileMenu" aria-hidden="true">
+    <div class="panel">
+      <div class="split">
+        <div class="brand-title">
+          <div class="name">Menu</div>
+          <div class="sub">Choose a path</div>
+        </div>
+        <button class="btn small" id="closeMenu" aria-label="Close menu">Close</button>
+      </div>
+      <div class="mt18">
+        <a href="managed-it.html">Managed IT</a>
+<a href="surveillance.html">Surveillance</a>
+<a href="solar-sentry.html">Solar Sentry</a>
+<a href="revenue-recovery.html">Revenue Recovery</a>
+<a href="pricing.html">Pricing</a>
+<hr class="sep"/>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+<a href="immunity-check.html">Immunity Check</a>
+<a href="onboarding.html">Client Onboarding</a>
+      </div>
+      <div class="mt22">
+        <a class="btn primary" style="width:100%" href="contact.html#book">Book a Call</a>
+      </div>
+      <p class="note mt16">Fast response. Straight answers. No fluff.</p>
+    </div>
+  </div>
+
+  <main>
+    
+<section class="section">
+  <div class="container">
+    <div class="grid cols-2" style="align-items:start">
+      <div>
+        <span class="badge"><span class="dot"></span><span>Client Onboarding</span></span>
+        <h1 style="margin:14px 0 12px; font-size:44px; letter-spacing:-.4px">Make onboarding painless.</h1>
+        <p style="color:var(--muted); line-height:1.65; margin:0">
+          Share what you know. We’ll build an implementation plan and a membership recommendation.
+          If you already have tooling, we’ll rationalize it — not rip-and-replace blindly.
+        </p>
+        <div class="mt18" style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn primary" href="#form">Start onboarding</a>
+          <a class="btn" href="pricing.html">See tiers</a>
+        </div>
+
+        <div class="mt26 card pad-lg">
+          <h3 class="card-title">What we collect</h3>
+          <ul class="ul">
+            <li><span class="check" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"/>
+  </svg>
+</span> Basic environment details (users, endpoints, locations)</li>
+            <li><span class="check" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"/>
+  </svg>
+</span> Your current IT stack (if any)</li>
+            <li><span class="check" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.9)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"/>
+  </svg>
+</span> Priorities + pain points</li>
+          </ul>
+          <p class="note mt12">We keep this light. The goal is speed to a clear plan.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="card pad-lg" id="form">
+          <div class="split">
+            <div>
+              <p class="m0" style="font-weight:800">Onboarding form</p>
+              <p class="note mt10">This submits to Netlify forms.</p>
+            </div>
+            <span class="pill">10 minutes</span>
+          </div>
+          <hr class="sep"/>
+          <form class="form" name="client-onboarding" method="POST" data-netlify="true" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="client-onboarding"/>
+            <div class="inline cols-2">
+              <div class="field"><label>Name</label><input name="name" required placeholder="Your name"/></div>
+              <div class="field"><label>Email</label><input name="email" type="email" required placeholder="name@company.com"/></div>
+            </div>
+            <div class="inline cols-2">
+              <div class="field"><label>Company</label><input name="company" required placeholder="Business name"/></div>
+              <div class="field"><label>Phone</label><input name="phone" required placeholder="(806) …"/></div>
+            </div>
+            <div class="inline cols-2">
+              <div class="field"><label>Users</label><input name="users" required placeholder="e.g., 18"/></div>
+              <div class="field"><label>Endpoints</label><input name="endpoints" required placeholder="e.g., 22"/></div>
+            </div>
+            <div class="field"><label>Current IT situation</label>
+              <select name="current_it" required>
+                <option value="" disabled selected>Select</option>
+                <option>In-house IT</option><option>Another MSP</option><option>Break/fix</option><option>Mostly DIY</option><option>Not sure</option>
+              </select>
+            </div>
+            <div class="field"><label>Primary goals</label><textarea name="goals" required placeholder="Example: tighten security, reduce downtime, faster support, standardize devices…"></textarea></div>
+            <button class="btn primary" type="submit" style="width:100%">Submit onboarding</button>
+            <p class="note">After submission we’ll propose next steps and a rollout plan.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid cols-3">
+        <div>
+          <div class="brand-title">
+            <div class="name">Caprock Technology Group</div>
+            <div class="sub">The Panhandle’s security-first IT partner.</div>
+          </div>
+          <p class="note mt12">Managed IT memberships • HaaS networking • Surveillance systems • Mobile solar surveillance trailers • Missed-call text-back revenue recovery.</p>
+          <div class="mini-links">
+            <a href="privacy.html">Privacy</a> ·
+            <a href="terms.html">Terms</a> ·
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <p class="m0"><strong>Service area</strong></p>
+          <p class="note mt10">Amarillo + Texas Panhandle</p>
+          <p class="m0 mt16"><strong>Response promise</strong></p>
+          <p class="note mt10">If you submit a form during business hours, we aim to respond same day. After hours, first thing next business day.</p>
+        </div>
+        <div>
+          <p class="m0"><strong>Contact</strong></p>
+          <p class="note mt10">
+            <a href="tel:8063165070">806-316-5070</a><br/>
+            <a href="mailto:info@caprocktech.com">info@caprocktech.com</a><br/>
+            Amarillo, TX
+          </p>
+          <div class="mt16">
+            <a class="btn primary" href="immunity-check.html">Start Immunity Check</a>
+          </div>
+        </div>
+      </div>
+      <p class="small mt22">© 2026 Caprock Technology Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <div class="t">Saved</div>
+    <div class="m">We’ll be in touch.</div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

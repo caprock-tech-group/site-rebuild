@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+# Optional: set custom 404 to home
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
